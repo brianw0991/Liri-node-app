@@ -6,6 +6,7 @@
 var fs = require("fs");
 var keys = require("./keys")
 var Twitter = require(exports.twitter)
+//global variables for spotify and OMDB will be delcared here 
 
 var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -30,3 +31,20 @@ function displayTweets(){
             };
     });
 };
+
+//function displaySong 
+    //if statement to differentiate between errors in response and good response
+        //response will be console logged to display in terminal
+
+        //else error message will display
+
+//function displayMovie
+    //if statement to differentiate between errors again 
+        //good response will console.log response
+
+        //error will console.log error
+
+        
+
+
+
